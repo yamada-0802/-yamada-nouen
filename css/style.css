@@ -16,3 +16,9 @@
 .hero .hero-copy{min-height:0}
 .hero.photo-background:before{inset:0;height:auto;background:linear-gradient(180deg,rgba(4,18,30,.30),rgba(4,18,30,.16) 55%,rgba(4,18,30,.06))}
 @media(max-width:700px){.hero{height:clamp(350px,90vw,480px);padding-bottom:27px;background-position:right center}}
+
+/* 作業・生育状況の写真だけをPC3列・スマホ横スクロールにする。 */
+#gallery-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;scroll-snap-type:none}
+#gallery-list figure{width:100%;min-width:0;align-self:start}
+#gallery-list img{display:block;width:100%;height:auto}
+@media(max-width:700px){#gallery-list{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity}#gallery-list figure{flex:0 0 76%;width:auto;scroll-snap-align:start}}

@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "path": "assets/gallery/IMG_5536.webp",
+    "caption": "土づくり",
+    "order": 1,
+    "date": null,
+    "alt": "土作りを終えた畑",
+    "width": 968,
+    "height": 1280
+  },
+  {
+    "path": "assets/gallery/IMG_5537.webp",
+    "caption": "マルチ張り",
+    "order": 2,
+    "date": null,
+    "alt": "トラクターによるマルチ張り作業",
+    "width": 973,
+    "height": 1280
+  },
+  {
+    "path": "assets/gallery/IMG_5540.webp",
+    "caption": "マルチ張り完了",
+    "order": 3,
+    "date": null,
+    "alt": "マルチ張り完了後の畑",
+    "width": 1179,
+    "height": 1243
+  }
+]
