@@ -10,3 +10,11 @@
 .gallery-pages button:before{content:'';position:absolute;inset:-8px}
 .gallery-pages button[aria-current=true]{background:var(--blue)}
 @media(max-width:700px){.about h2,.gallery-section h2,.info h2,.bottom h2{border:0;padding-left:19px;position:relative}.about h2:before,.gallery-section h2:before,.info h2:before,.bottom h2:before{content:'';width:4px;height:1.1em;background:var(--blue);transform:skew(-27deg);position:absolute;left:2px;top:4px}}
+
+/* トップの写真のみ。紺色のタイトル領域は維持する。 */
+.hero{height:auto;display:block;padding-bottom:0}
+.hero .hero-copy{min-height:418px}
+.hero.photo-background:before{bottom:auto;height:450px}
+.hero-photo{position:relative;width:100%;max-width:1280px;aspect-ratio:1280/721;margin:0 auto}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:1280/721;object-fit:contain;object-position:center}
+@media(max-width:700px){.hero .hero-copy{min-height:258px}.hero.photo-background:before{height:285px}}
